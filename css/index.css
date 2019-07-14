@@ -1,0 +1,327 @@
+html,
+body,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+}
+ul li {
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('iconfont.woff2') format('woff2'),
+        url('iconfont.woff') format('woff'),
+        url('iconfont.ttf') format('truetype'),
+        url('iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container .item #slide.slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: default;
+}
+
+.container .item #slide.slide a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: default;
+    text-decoration: underline;
+}
+.list{
+    cursor: pointer;
+    transition: all 2s;
+    border: 3px solid #fff;
+    z-index: 99;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .42);
+    color: #fff;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .item {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+}
+
+.container .item.warrper1 .list {
+    position: absolute;
+    width: 490px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .item.warrper1 .portrait{
+    background: url(../img/12.jpg) no-repeat;
+    width: 80px;
+    height: 80px;
+    border-radius: 59%;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 88;
+}
+/* .container .item.warrper1 .list.wchat{
+   top: 100px;
+   left: 100px;
+   width: 100px;
+   height: 50px;
+}
+.container .item.warrper1 .list.wchat.hide{
+    top: -100px;
+    left:-100px;
+} */
+.container .item.warrper1 .list.hide{
+    top:-600px;
+    left: -300px;
+}
+.container .item.warrper1 .list div{
+    margin: 4px;
+    /* display: block; */
+    border-bottom:1px solid #000;
+}
+.container .item.warrper1 .list div a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container .item.warrper1 .list:hover {
+    transform: translate(-50%, -54%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+    transition: all 0.5s;
+}
+
+.container .item.warrper2 {
+    background: url('../img/4.jpeg') no-repeat;
+    background-size: 100% 100%
+}
+.container .item.warrper2 .list{
+    width: 600px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+.container .item.warrper2 .list.hide{
+    left: -700px;
+    top: 50px;
+
+}
+
+.container .item.warrper2 .list:hover{
+    top: 6px;
+    left: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .42);
+    transition: all 0.5s;
+}
+.container .item.warrper2 .list span{
+    display: block;
+    margin: 5px;
+}
+.container .item.warrper2 .list span i{
+    color: #ccc;
+    font-weight: bold;
+}
+.container .item.warrper3 {
+    background: url('../img/5.jpg') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.container .item.warrper3 .list{
+   
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    right: 300px;
+    padding: 0 10px;
+    top: 20px;
+    right: 300px;
+}
+
+.container .item.warrper3 .list.hide{
+    top: -100px;
+    right: -700px;
+}
+.container .item.warrper3 .list:hover{
+    top: 15px;
+    right: 290px;
+    transition: all 0.5s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .42);
+}
+.container .item.warrper4 {
+    background: url('../img/6.jpg') no-repeat;
+    background-size: 100% 100%
+}
+.container .item.warrper4 .list{
+    width: 300px;
+    position: absolute;
+    bottom: 40px;
+    right: 600px;
+    
+}
+.container .item.warrper4 .list:hover{
+    bottom: 44px;
+    right: 603px;
+    transition: all 0.3s
+}
+.container .item.warrper4 .list.hide{
+  bottom: -300px;
+  right: -400px;
+}
+.btnbox {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 99;
+    width: 100px;
+    border-bottom: 100vh #e4e2e3  solid;
+    border-left: 150px solid transparent;
+    border-top:none;
+    transition:  all 0.5s;
+}
+.btnbox .clear{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+
+}
+.btnbox.hide{
+ right: -300px;
+}
+.btnbox .clear:hover{
+    color: #fff;
+}
+.btnbox .btnlist{
+    position: absolute;
+    right: 1%;
+    top:70px;
+    height: 200px;
+    width: 100px;
+}
+.btnbox .btnlist .btn{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: #666;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.btnbox .btnlist .btn:hover{
+    font-weight: bold;
+    color: #3e3e3e;
+}
+.btnshow{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    z-index: 88;
+    color: #ddd;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btnshow:hover{
+    font-weight: bold;
+    color: #fff;
+}
+.callbox{
+    position: fixed;
+    left: 10px;
+    bottom: 30px;
+    z-index: 99;
+}
+.callbox ul li{
+    font-size: 30px;
+    margin: 10px;
+    color: #ccc;
+    display:flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+   
+    align-items: center;
+}
+.callbox ul li .tip{
+    display: none;
+    width: 100px;
+    height: 100px;
+    font-size: 12px;
+    
+    margin-left: 30px;
+    border:5px #fff solid;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    
+}
+.callbox ul li .tip::before{
+    display: inline-block;
+    content: '';
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    position: absolute;
+  left:-15px;
+  top:50%;
+  transform: translateY(-50%)
+}
+.callbox ul li .tip.q{
+    background: url(../img/15.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.callbox ul li .tip.w{
+    background: url(../img/14.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.callbox ul li .tip.g{
+ width: 300px;
+ font-weight: bold;
+ height: 50px;
+ line-height: 50px;
+  
+}
+.callbox ul li:hover .tip{
+    display: inline-block;
+}

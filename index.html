@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script type="text/javascript" src="./lib/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/vmc.slide.js"></script>
+    <script src="./src/vmc.slide.effects.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.container #slide').vmcSlide({
+                imgWidth: 0,
+                imgHeight: 0,
+                duration: 4000,
+                speed: 800,
+                effects: ['fade', 'slideX', 'slideY', 'page', 'circle', 'rollingX', 'rollingY',
+                        'blindsX', 'blindsY'
+                    ]
+                    // , showText: true
+                    ,
+                random: false
+                    // ,sideButton: false
+                    // ,navButton: false
+                    ,
+                flip: function (from, to) {
+                    console.log('from:' + from + ' to:' + to);
+                },
+                navButton: false,
+                sideButton: false,
+                hoverStop: false
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="warrper1 item">
+            <div id="slide" class="slide">
+                <ul>
+                    <li><img src="./img/0.jpg" /></li>
+                    <li><img src="./img/1.jpg" /></li>
+                    <li><img src="./img/2.jpg" /></li>
+                    <li><img src="./img/3.jpg" /></li>
+                </ul>
+            </div>
+            <div class="portrait"> </div>
+            <div class="list hide">
+                <p>您好，我叫王江铭，坐标河北。 我是计算机专业,对前端很感兴趣，所以在学校打下很好的基础又自学很多框架，今后的职业规划是朝着全栈发展，目前在学小程序。 在实习的五个月来,本人在公司主要负责整个页面的前端开发，配合后台人员实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。小的来说，商城，企业网站，视频，音频，评论等都有涉及。
+                        不浮躁，喜欢前端，执行力，学习能力都棒棒哒！目前，能做点粗糙设计（比如本网站）</p>
+            </div>
+        </div>
+        <div class="warrper2 item">
+            
+            <div class="list hide">
+                <span><i>项目经验</i></span>
+                <span><i>项目时间：</i>2019.5-2019.6</span>
+                <span><i>项目介绍：</i>毕设作品类似空间留言系统，独自思考，增删改查评论点赞功能一一俱全</span>
+                <span><i>工作内容：</i>从项目的构建但实现全由个人构思也许不太大，但麻雀虽小五脏俱全，项目利用了vue-cli3.0的脚手架，和谷歌firebases实时数据库，利用vue.store做了小小型的中央数据处理，axios实现留言的增删改查，也实现了点赞评论的功能，window.localStorage
+                    做了简单的免密登陆，</span>
+                <div><i style="font-weight: bold; color: #ccc;">github地址：</i><a
+                        href="https://github.com/kevinqijie/messageboards.git"
+                        target="blank">https://github.com/kevinqijie/messageboards.git</a></div>
+            </div>
+        </div>
+        <div class="warrper3 item">
+            <div class="list hide">
+                <h4>教育经历</h4>
+                <h6>毕业学校：邯郸职业技术学院</h6>
+                <h6>学历：大专</h6>
+                <h6>专业：软件技术</h6>
+                <h6>掌握技能：<br>1、熟悉前端开发流程，掌握HTML css js<br>
+                    2、熟练应用Office软件，初级PS<br>
+                    3、熟悉常用框架 vue bootsrap jquery；<br>
+                    4、掌握ajax、了解json数据格式 <br>
+                    5、工作认真细致，具有较强的执行力、事业心及责任心，有严密的逻辑思维能力及全面分析能力。<br>
+                    6、有自己封装组件的习惯GitHub也有，地址：https://github.com/kevinqijie/assembly.git</h6>
+                <h6>自我评价：切得了图，抗得了枪，懂得了框架，还不要高价</h6>
+            </div>
+        </div>
+        <div class="warrper4 item">
+                <div class="list hide">
+                        <h4>工作经历</h4>
+                        <h6>时间：2018.12-2019.5</h6>
+                        <h6>岗位：前端实习生</h6>
+                        <h6>主要职责：<br>1、辅助技术开发<br>
+                            2、书写静态网页，和微小组件<br>
+                            
+                    </div>
+        </div>
+        <div class="btnbox hide">
+            <span class="clear">X</span>
+           <ul class="btnlist">
+            <li class="btn">首页</li>
+            <li class="btn">项目经验</li>
+            <li class="btn">学历&技能</li>
+            <li class="btn">工作经历</li>
+           </ul>
+        </div>
+        <span class="iconfont btnshow">&#xe7f4</span>
+        <div class="callbox">
+              <ul>
+                  <li class="iconfont ">&#xe733 <span class="tip q"></span>
+                    </li>
+                  <li class="iconfont ">&#xe883 <span class="tip w"></span>
+                    </li>
+                  <li class="iconfont ">&#xe885<a href="https://github.com/kevinqijie?tab=repositories" class="tip g">https://github.com/kevinqijie?tab=repositories</a>
+                </li>
+              </ul>  
+                
+        </div>
+        <!-- <audio autoplay='autoplay'  src="./img/bg.mp3">您的浏览器不支持 audio 标签。</audio> -->
+    </div>
+    
+    <script src="./js/index.js"></script>
+    
+</body>
+
+</html>
