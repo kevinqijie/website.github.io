@@ -35,22 +35,22 @@ btnshow.onclick = function () {
 function init() {
     var item = $all('.item'),
         items = Array.from(item);
-    item.forEach((it) => {
+    items.forEach((it) => {
         var rect = it.getBoundingClientRect();
         var list = it.getElementsByClassName('list'),
             lists = Array.from(list);
         lists.forEach((item,index) => {
             if (rect.bottom <= 0) {
-                item.classList.add('hide')
+                item.classList.add('hide');
                 return false;
             }
             if (rect.top >= document.documentElement.clientHeight) {
-
                 item.classList.add('hide')
                 return false;
             }
             item.classList.remove('hide')
         })
+       
     })
 }
 init();
@@ -72,7 +72,7 @@ function s(index) {
 }
 window.onscroll = function () {
     init();
-    an();
+    
 }
 function an(){
     var an = document.querySelector('.an'),
@@ -80,4 +80,9 @@ function an(){
       welt.style.display = 'block';
       an.style.animation = 'an 25s linear infinite';
 
+}
+window.onload = function(){
+    an();
+    var load = document.querySelector('.lading');
+    load.style.display = 'none';
 }
