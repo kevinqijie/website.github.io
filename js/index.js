@@ -75,15 +75,8 @@ window.onscroll = function () {
     
 }
 
-function an(){
-    let an = document.querySelector('.an'),
-    welt = document.querySelector('.welt');
-      welt.style.display = 'block';
-      an.style.animation = 'an 25s linear infinite';
-
-}
 window.onload = function(){
-    an();
+ 
     var load = document.querySelector('.lading');
     load.style.display = 'none';
 }

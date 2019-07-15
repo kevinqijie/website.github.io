@@ -54,7 +54,7 @@ a {
     color: #fff;
     z-index: 108;
     height: 30px;
-    display: none;
+    animation: an 25s linear infinite;
 }
 .welt .an{
     height: 30px;
