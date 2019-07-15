@@ -379,8 +379,8 @@ a {
     display: flex;
     flex-wrap: wrap;
     cursor: pointer;
-
-    align-items: center;
+    height: 30px;
+    
 }
 
 .callbox ul li .tip {
@@ -388,13 +388,12 @@ a {
     width: 100px;
     height: 100px;
     font-size: 12px;
-
     margin-left: 30px;
     border: 5px #fff solid;
     text-align: center;
     border-radius: 5px;
     position: relative;
-
+    top:-50%;
 }
 
 .callbox ul li .tip::before {
@@ -412,11 +411,13 @@ a {
 .callbox ul li .tip.q {
     background: url(../img/15.jpg) no-repeat;
     background-size: 100% 100%;
+    top:-35px;
 }
 
 .callbox ul li .tip.w {
     background: url(../img/14.jpg) no-repeat;
     background-size: 100% 100%;
+    top:-35px;
 }
 
 .callbox ul li .tip.g {
