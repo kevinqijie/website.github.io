@@ -88,7 +88,7 @@ window.onload = function(){
     load.style.display = 'none';
 }
 document.onreadystatechange = function () {
-    if (document.readyState === "complete ") {
+    if (document.readyState === "complete") {
        let welt = document.querySelector('.welt');
         welt.style.zIndex = 88;
         var load = document.querySelector('.lading');
