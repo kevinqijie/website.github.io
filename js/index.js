@@ -9,56 +9,75 @@ var btns = Array.from($all('.btn'));
 btns.forEach((item, index) => {
     item.onclick = function () {
         var h = window.innerHeight;
-        var l = h *index;
-       
-        window.scrollTo(0, l)
+        var l = h * index;
+
+        window.scrollTo(0, l);
+        // item.classList.add('active');
         init();
+        btns.forEach((it,i)=>{
+            if(i == index){
+                it.classList.add('active');
+                return false;
+            }
+            it.classList.remove('active');
+        })
     }
 })
 var clear = document.querySelector('.clear'),
     btnshow = document.querySelector('.btnshow'),
     btnbox = document.querySelector('.btnbox');
-    clear.onclick = function(){
-        btnbox.classList.add('hide');
-    }
-    btnshow.onclick = function(){
-        btnbox.classList.remove('hide');
-    }
+clear.onclick = function () {
+    btnbox.classList.add('hide');
+}
+btnshow.onclick = function () {
+    btnbox.classList.remove('hide');
+}
 function init() {
-    // var rect = document.querySelector('.item').getBoundingClientRect();
-    // if (rect.bottom <= 0) {
-    //     return false;
-    // }
-    // if (rect.top >= document.documentElement.clientHeight) {
-    //     return false;
-    // }
     var item = $all('.item'),
         items = Array.from(item);
-    item.forEach((it, index) => {
+    item.forEach((it) => {
         var rect = it.getBoundingClientRect();
-        // console.log(rect)
         var list = it.getElementsByClassName('list'),
             lists = Array.from(list);
-            lists.forEach((item)=>{
-                if (rect.bottom <= 0) {
-            
-                    item.classList.add('hide')
-                    return false;
-                }
-                if (rect.top >= document.documentElement.clientHeight) {
-                    
-                    item.classList.add('hide')
-                    return false;
-                }
-                item.classList.remove('hide')
-            })
-        
-        
+        lists.forEach((item,index) => {
+            if (rect.bottom <= 0) {
+                item.classList.add('hide')
+                return false;
+            }
+            if (rect.top >= document.documentElement.clientHeight) {
+
+                item.classList.add('hide')
+                return false;
+            }
+            item.classList.remove('hide')
+        })
     })
 }
 init();
-
-window.onscroll = function(){
+var navbtn = Array.from($all('.navbtn'));
+navbtn.forEach((item, index) => {
+    item.onclick = function () {
+        s(index);
+    }
+})
+function s(index) {
+    var cards = Array.from($all('.card'));
+    cards.forEach((it, i) => {
+        if (i == index) {
+            it.style.display = 'block';
+            return false;
+        }
+        it.style.display = 'none';
+    })
+}
+window.onscroll = function () {
     init();
-   
+    an();
+}
+function an(){
+    var an = document.querySelector('.an'),
+      welt = document.querySelector('.welt');
+      welt.style.display = 'block';
+      an.style.animation = 'an 25s linear infinite';
+
 }
