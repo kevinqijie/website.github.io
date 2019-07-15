@@ -52,7 +52,7 @@ a {
     width: 100vw;
     background: rgba(0, 0, 0, .42);
     color: #fff;
-    z-index: 88;
+    z-index: 108;
     height: 30px;
     display: none;
 }

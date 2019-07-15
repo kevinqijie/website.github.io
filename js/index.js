@@ -74,9 +74,10 @@ window.onscroll = function () {
     init();
     
 }
+
 function an(){
-    var an = document.querySelector('.an'),
-      welt = document.querySelector('.welt');
+    let an = document.querySelector('.an'),
+    welt = document.querySelector('.welt');
       welt.style.display = 'block';
       an.style.animation = 'an 25s linear infinite';
 
@@ -85,4 +86,13 @@ window.onload = function(){
     an();
     var load = document.querySelector('.lading');
     load.style.display = 'none';
+}
+document.onreadystatechange = function () {
+    if (document.readyState === "interactive") {
+       let welt = document.querySelector('.welt');
+        welt.style.zIndex = 88;
+        var load = document.querySelector('.lading');
+        load.style.display = 'none';
+        
+    }
 }
