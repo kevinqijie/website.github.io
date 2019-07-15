@@ -54,7 +54,7 @@ a {
     color: #fff;
     z-index: 108;
     height: 30px;
-    animation: an 25s linear infinite;
+   
 }
 .welt .an{
     height: 30px;
@@ -63,7 +63,7 @@ a {
     position: absolute;
     left: 2000px;
     transition: all 5s ;
-    /* animation: an 25s linear infinite; */
+    animation: an 25s linear infinite;
 }
 @keyframes an{ 
     0%{left: 1600px;}
