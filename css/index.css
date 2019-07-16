@@ -184,7 +184,7 @@ a {
     height: 100%;
     padding:5px;
     box-sizing: border-box;
-    border: 3px #fff solid;
+    /* border: 3px #fff solid; */
     border-radius: 5px;
 }
 .card ul li {
@@ -368,7 +368,7 @@ a {
 .callbox {
     position: fixed;
     left: 10px;
-    bottom: 30px;
+    bottom: 40px;
     z-index: 99;
 }
 
@@ -393,11 +393,11 @@ a {
     text-align: center;
     border-radius: 5px;
     position: relative;
-    top:-50%;
+    top:-35px;
 }
 
 .callbox ul li .tip::before {
-    display: inline-block;
+  
     content: '';
     border-right: 10px solid #fff;
     border-bottom: 10px solid transparent;
@@ -411,22 +411,19 @@ a {
 .callbox ul li .tip.q {
     background: url(../img/15.jpg) no-repeat;
     background-size: 100% 100%;
-    top:-35px;
+  
 }
 
 .callbox ul li .tip.w {
     background: url(../img/14.jpg) no-repeat;
     background-size: 100% 100%;
-    top:-35px;
+   
 }
 
 .callbox ul li .tip.g {
-    width: 300px;
-    font-weight: bold;
-    height: 50px;
-    line-height: 50px;
-
-}
+    background: url(../img/21.png) no-repeat;
+    background-size: 100% 100%;
+  }
 
 .callbox ul li:hover .tip {
     display: inline-block;
