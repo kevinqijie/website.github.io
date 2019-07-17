@@ -62,7 +62,7 @@ a {
     white-space:nowrap;
     position: absolute;
     left: 2000px;
-    transition: all 5s ;
+  
     animation: an 25s linear infinite;
 }
 @keyframes an{ 
